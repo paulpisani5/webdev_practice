@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Practice</title>
+</head>  
+<body>
+    <h1>HTML Practice</h1>
+    <br />
+    <br />
+    <h2>Table of Contents</h2>
+    <h3><a href="#tables">Tables</a></h3>
+    <h3><a href="#forms">Forms</a></h3>
+    <h3><a href="#svgs">SVGs</a></h3>
+    <br />
+    <hr /> 
+
+
+
+    <h2 id="tables">Tables</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Paul</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Jack</td>
+            <td>10</td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <table border="3px">
+        <colgroup>
+            <col span="2" style="background-color: yellow">
+            <col style="background-color: red">
+        </colgroup>
+        <caption>Kids</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jack</td>
+                <td>Male</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Paul</td>
+                <td>Male</td>
+                <td>6</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Avg</td>
+                <td>8</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br />
+    <hr> 
+    <br /> 
+
+
+
+    <h2 id="forms">Forms</h2>
+    <form action="/submit" method="post">
+        <input type="radio" name="gender" id="male"> 
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label>
+        <br />
+        <br />
+        <input type="checkbox" name="interests" id="sports" value="sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" name="interests" id="news" value="news">
+        <label for="news">News</label>
+        <input type="checkbox" name="interests" id="finance" value="finance">
+        <label for="finance">Finance</label>
+        <br />
+        <br />
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <br />
+        <br />
+        <input type="submit" value="Submit">
+    </form>
+    <br />
+    <br />
+    <form action="submit" method="/post"> 
+        <p>Why are you cancelling your subscription?</p>
+        <label for="firstname">First name: </label>
+        <input type="text" id="firstname" pattern="[a-zA-Z0-9]+">
+        <br />
+        <select name="reason">
+            <option value="price">Price</option>
+            <option value="bugs">Bugs</option>
+            <option value="support">Support</option>
+        </select>
+        <br />
+        <textarea name="context" rows="4" cols="50" placeholder="[Optional] Share more details..."></textarea>
+        <br />
+        <input type="submit" value="Submit">
+    </form>
+    <br />
+    <hr />
+    <br />
+
+
+
+    <h2 id="svgs">SVGs</h2>
+    <svg height="30" width="30">
+        <rect width="30" height="30" style="fill:rgb(0,0,255);stroke-width:1;stroke:rgb(0,0,0)" />
+    </svg>
+    <br />
+    <hr /> 
+    <br />
+
+
+    <h2 id="misc">Miscellaneous</h2>
+    <iframe src="https://youtu.be/fSOWKrj7i_o?si=0C1nyJz9LgA6-HPT" width="400" height="400"></iframe>
+
+
+    <br />
+    <br />
+    <br />
+    <hr> 
+    <br /> 
+</body>
+</html>
