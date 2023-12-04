@@ -1,0 +1,302 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+    <title>
+        HTML Notes
+    </title>
+</head>
+<body>
+    <h1>Webdev Notes</h1>
+    
+    <h2>Coding With Harry</h2>
+    <br />
+
+
+    <h3>Basic Structure</h3>
+    <p>An HTML doc is structured using set of nested tags, each enclosed
+         in angle brackets and acting as container for content or other tags</p>
+    <ul>
+        <li>HTML is structured using nested tags</li>
+        <li>Each tag enclosed in angle brackets</li>
+        <li>< !DOCTYPE html > specificies document type </li> 
+        <li>< html > root element tag encapsulates all content</li>
+        <li>Can include language (eg < html lang="en" >)</li>
+        <li>< head > tag contains metadata and links to external CSS + JS  </li>
+        <li>< title > tag sets title of web page (displayed on tab bar)</li>
+        <li>< body > tag contains visible content of web page (text, images, etc)</li>  
+    </ul>
+    <br /> 
+    <hr />
+
+
+
+    <h2>HTML Comments</h2>
+    <p>Comments are ignored by web browsers and aid in readability / documentation. 
+        They are denoted by < !-- content -- > and can be single or multiple lines. Ctrl (Cmd)
+        + / is the shorthand. See exmples in code (they won't show up below). 
+    </p>
+        <!-- this is single line comment  -->
+
+        <!-- this is multi 
+        line comment  -->
+    </p>
+    <br /> 
+    <hr />
+
+
+
+    <h3>HTML Tags</h3>
+    <p>Tags are words contained in angle brackets. A small set of tags make up 
+        70+% of HTML content
+    </p>
+    <ul>
+        <li><b>Doc Structure Tags</b></li>
+        <ul>
+            <li>< !DOCTYPE html >: Specifies document type</li>
+            <li>< html >: Encloses entire HTML doc</li>
+            <li>< head >: Contains meta-information and links to CSS + JS</li>
+            <li>< body >: Contains main content of webpage</li>
+        </ul>
+        
+        <li><b>Metadata Tags</b></li>
+        <ul>
+            <li>< title >: Sets title of web page</li>
+            <li>< meta >: Provides metadata such as charset, author, viewport settings</li>
+            <li>< link >: Links to external resources like CSS</li>
+        </ul>
+        
+        <li><b>Text Formatting Tags</b></li>
+        <ul>
+            <li>< p >: Paragraph</li>
+            <li>< h1 >: For headings (sizes h1-h6)</li>
+            <li>< pre >: Preformatted text useful for displaying code snippets</li>
+            <li>< strong >: Strong emphasis (usually bold)</li>
+            <li>< em >: Emphasis (typically italic)</li>
+            <li>< br >: Line break</li>
+            <li>< hr >: Horizontal rule</li>
+        </ul>
+
+        <li><b>List Tags</b></li>
+        <ul>
+            <li>< ul >: Unordered list</li>
+            <li>< o1 >: Ordered list</li>
+            <li>< li >: List item</li>
+
+        </ul>
+        
+        <li><b>Hyperlink and Media Tags</b></li>
+        <ul>
+            <li>< a >: Anchor (used for links)</li>
+            <li>< img >: Image content</li>
+            <li>< audio >: Audio content</li>
+            <li>< video >: Video content</li>
+        </ul>
+
+        <li><b>Form Tags</b></li>
+        <ul>
+            <li>< form >: Form</li>
+            <li>< img >: Input field</li>
+            <li>< textarea >: Text area</li>
+            <li>< button >: Button</li>
+            <li>< select >: Dropdown list</li>
+            <li>< option >: Option with a select or datalist</li>
+        </ul>
+
+        <li><b>Table Tags</b></li>
+        <ul>
+            <li>< table >: Table</li>
+            <li>< tr >: Table row</li>
+            <li>< td >: Table data cell</li>
+            <li>< th >: Table header cell</li>
+            <li>< thead >: Table header group</li>
+            <li>< tbody >: Table body group</li>
+            <li>< tfoot >: Table footer group</li>
+        </ul>
+
+        <li><b>Semantic Tags</b></li>
+        <ul>
+            <li>< header >: Header section</li>
+            <li>< footer >: Footer section</li>
+            <li>< article >: Article</li>
+            <li>< section >: Section</li>
+            <li>< nav >: Navigation</li>
+            <li>< aside >: Sidebar content</li>
+        </ul>
+    </ul>
+    <p><b>Paired tags</b> come with opening and closing and contain content (close has /). 
+        Common examples include p, b, and headers (h1-h6).
+    </p>
+    <p><b>Unpaired tags</b> don't require closing tag - they're self-contained. Common 
+        examples include br, hr, and img.
+    </p>
+    <br /> 
+    <hr />
+
+
+
+    <h2>HTML Elements</h2>
+    <p>An HTML element consists of a start tag, content, and end tag. See example below: 
+        <br />
+        < h1 >This is our first heading< /h1 >
+    </p>
+    <p>Elements can also be nested (can be parent while tags cannot). See example below:
+        <br />
+        < h1 >< b >This is our first heading< /b >< /h1 >
+    </p>
+    <p>Elements can also be empty (eg the break tag). Self closing tags are still 
+        considered elements. 
+    </p>
+    <br /> 
+    <hr />
+
+
+
+    <h2>HTML Attributes</h2>
+    <p>HTML attributes are used to defined characteristics of an HTML element.
+        They are placed in the element's opening tag and include a name (propert) and value.
+        There are three main types: 
+    <p>
+    <ul>
+        <li><b>Core attributes:</b> Basic attributes that can be applied to most elements including id, class, and style</li>
+        <li><b>Internationalization attributes:</b> Attributes helping adapt to specific locales (eg lang, dir)</li>
+        <li><b>Generic attributes:</b> Attributes that provide additional </li>
+    </ul>
+    <p>Core attributes are the most widely used. See examples below:</p>
+    <ul>
+        <li>id: Unique identifier, can only be used on single element, often used with JS</li>
+            <ul><li>< h4 id="myUniqueId" >Some text< h4 ></li></ul>
+        <li>class: Can be applied multiple times, usually camelcase (eg myClass)</li>
+            <ul><li>< h4 class="myClass" >Some textt< h4 ></li></ul>
+        <li>title: Provide more info on hover</li>
+            <ul><li>< h4 class="hello" >Some text< h4 ></li></ul>
+        <li>style: Used directly inline for styling individual elements</li>
+    </ul>
+    <p>CSS can also be applied in the style section (or a style sheet). IDs are referenced with #, while 
+        classes can be dot referenced: </p>
+    <pre>
+    /* CSS for ID */
+    #myUniqueID { 
+        background-color: yellow;
+    }
+    /* CSS for class */
+    .myClass {
+        font-size: 18px;
+    }
+    </pre>
+    <br /> 
+    <hr />
+
+
+
+    <h3>Headings Tag</h3>
+    <p>Headings from h1 to h6 are used to hierarchically structure content on web pages.
+         This is helpful for both users and search engines (eg Google)</p>
+    <ul>
+        <li>h1: Often used for main heading or title</li>
+        <li>h2: Often used for second-level headings, or section titles</li>
+        <li>h3: Often used for subsections in h2 sections</li> 
+        <li>h4: Often used for subsections in h3 sections</li>
+        <li>h5: Rarely used but sometimes helpful for deeply nested sections</li>
+        <li>h6: Rarely used but sometimes helpful for specific formatting needs</li>
+    </ul>
+    See all of these headings below: 
+    <h1>h1</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5>
+    <h6>h6</h6>
+    <br /> 
+    <hr />
+
+
+
+    <h3>Paragraph Tag</h3>
+    <p>The < p > tag is used to format text into distinct paragraphs. You can enhance it with styling. It
+        should be used for textual content, and not layout control (for layout, use semantic tags like section
+         / article or CSS)≈
+    </p>
+    <br /> 
+    <hr />
+
+
+
+    <h3>Horizontal Rule & Line Break Tags</h3>
+    <p>The hr and br tags are both self closing tags. The horizontal rule helps visually separate different 
+        sections of your doc with a horizontal line, while the br breaks lines of text (especially helpful for addresses,
+        poems, lyrics, etc where preserving original line structure is important).
+    </p>
+    <br /> 
+    <hr />
+
+
+
+    <h3>Anchor Tag</h3>
+    <p>Anchor tags (< a >) are used to create links. They're also known as hyperlinks and used to link one doc to another.
+        All anchor tags must have the href attribute, defining what URL the link points to. The target attribute is optional 
+        and defines where to open the linked document. See target options below: </p>
+    <ul>
+        <li>_self: Opens document in same window or tab (default)</li>
+        <li>_blank: Opens document in new window or tab</li>
+        <li>_top: Opens document in full body of the window</li>
+        <li>_parent: Opens document in parent frame</li>
+    </ul>
+    <a href="http://www.google.com" target="_top">Google Homepage</a>
+    
+    <p>Links typically appear in different colors based on their state (customizable with CSS):</p>
+    <ul>
+        <li>Active: Displayed in red and underlined</li>
+        <li>Visited: Displayed in purple and underlined</li>
+        <li>Unvisited: Displayed in blue and underlined</li>
+    </ul>
+    <p>Anchor tags can also be used to link to sepecific sections in webpages. You can either use the name or id attribute 
+        of the target section, or use a hyperlink with a # followed by the target id or name (eg < a href="#section-one">Go to Section 1< /a >).
+    </p>
+    <h4><a href="#section3">Jump to section 3</a>
+    <h4>Section 1</h4>
+    <h4>Section 2</h4>
+    <h4 id="section3">Section 3</h4>
+    <br /> 
+    <hr />
+
+
+
+    <h3>Image Tag</h3>
+    <p>Image tags are used to embed images into websites. The basic syntax looks like this: < img src="image's path" />.
+        Images are self-closing tags, and alt is often used to give an image description. PNG, JPEG, JPG, and GIF are 
+        all supported. Image dimensions can also be set via width and height, though CSS is best practice (exception: 
+        specifying image dimensions can sometimes impact SEO and improve Cumulative Layout Shift score.
+    </p>
+    <img alt="Nick Cage" src="https://resizing.flixster.com/CeFdhibhanHu35h13fwd2hO7Zy0=/218x280/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/258_v9_bb.jpg">
+    <br /> 
+    <br /> 
+    <hr />
+
+
+
+    <h3>Pre Tag</h3>
+    <p>Pre tags help display preformatted text such as code snippets or preformatted text from files. It preserves the 
+        original formatting of the text where spacing and indentation matter (both spaces / indents and line breaks are 
+        maintained). More attributes can be added for further customization.
+    </p>
+    <pre>
+        def main(): 
+            print("Hello, World!")
+        
+        if __name__ == "__main__":
+            main()
+    </pre>
+    <br /> 
+    <br /> 
+    <hr />
+
+    
+    
+
+    <br /> 
+    <br /> 
+    <br /> 
+    <br /> 
+</body>
+</html>
